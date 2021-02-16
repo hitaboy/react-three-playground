@@ -2,47 +2,39 @@ import './App.scss';
 import {
   BrowserRouter as Router,
   Switch, 
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
-import Experiment_1 from './experiments/e_1.js'
-import Experiment_2 from './experiments/e_2.js'
+import Menu from './Menu.js'
+import Experiment1 from './experiments/e_1'
+import Experiment2 from './experiments/e_2'
+import Experiment3 from './experiments/e_3'
+import Experiment4 from './experiments/e_4'
 
 function App() {
   return (
     <Router>
-      <>
-        <h1>React Three Playground</h1>
+      
         <>
-          <>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/Experiment_1">Exp_1</Link>
-              </li>
-              <li>
-                <Link to="/Experiment_2">Exp_2</Link>
-
-              </li>
-            </ul>
-          </>
-          <>
-            <Switch>
-              <Route path="/experiment_1">
-                <Experiment_1 />
-              </Route>
-              <Route path="/experiment_2">
-                <Experiment_2 />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </>
+          <Menu />
+          <Switch>
+            <Route path="/e_1">
+              <Experiment1 />
+            </Route>
+            <Route path="/e_2">
+              <Experiment2 />
+            </Route>
+            <Route path="/e_3">
+              <Experiment3 />
+            </Route>
+            <Route path="/e_4">
+              <Experiment4 />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </>
-      </>
+      
     </Router>
   )
 }

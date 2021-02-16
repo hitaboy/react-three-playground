@@ -1,15 +1,30 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
+import Info from '../../Info.js'
 
-export default function Experiment_1() {
+export default function Experiment1() {
   
+  let infoData = {
+    title: "Exp 1 - Basic ineraction",
+    description: `
+      First react-three-fiber example from official repo. <a href='https://github.com/pmndrs/react-three-fiber'>Link</a><br>
+      <ul>
+        <li>We can control any element that has ref</li>
+        <li>We can modify any attibute with states</li>
+      </ul>
+    `
+  }
+
   return (
-    <Canvas>
-    <ambientLight />
-    <pointLight position={[10, 10, 10]} />
-    <Box position={[-1.2, 0, 0]} />
-    <Box position={[1.2, 0, 0]} />
-    </Canvas>
+    <div className="canvas_wrapper">
+      <Info data={infoData} />
+      <Canvas>
+        <ambientLight />
+        <pointLight position={[10, 10, 10]} />
+        <Box position={[-1.2, 0, 0]} />
+        <Box position={[1.2, 0, 0]} />
+      </Canvas>
+    </div>
   )
 }
 
