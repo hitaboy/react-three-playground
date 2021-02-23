@@ -7,11 +7,12 @@ export default function MeshBoxGeometry({position}) {
 
   useFrame(() => {
     mesh.current.rotation.x += 0.01
+    mesh.current.rotation.z += 0.001
     mesh.current.geometry.center()
   })
 
   /*
-  args: 
+  boxGeometry args: 
   width — Width; that is, the length of the edges parallel to the X axis. Optional; defaults to 1.
   height — Height; that is, the length of the edges parallel to the Y axis. Optional; defaults to 1.
   depth — Depth; that is, the length of the edges parallel to the Z axis. Optional; defaults to 1.

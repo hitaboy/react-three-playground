@@ -3,8 +3,9 @@ import Info from '../../Info.js'
 import MeshBoxGeometry from './boxGeometry.js'
 import MeshCircleGeometry from './circleGeometry.js'
 import MeshConeGeometry from './coneGeometry.js'
-import MeshDodecahedronGeometry from './dodecahedronGeometry.js'
 import MeshCylinderGeometry from './cylinderGeometry.js'
+import MeshDodecahedronGeometry from './dodecahedronGeometry.js'
+
 
 export default function Experiment4() {
   
@@ -21,14 +22,14 @@ export default function Experiment4() {
   return (
     <div className="canvas_wrapper">
       <Info data={infoData} />
-      <Canvas camera={{ fov: 15, position: [0, 0, 30] }}>
+      <Canvas camera={{ fov: 55, far: 2000, position: [0,0,150] }} >
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <MeshBoxGeometry position={[-50, 0, 0]} />
-        <MeshCircleGeometry position={[-25, 0, 0]} />
+        <MeshBoxGeometry position={[-100, 0, 0]} />
+        <MeshCircleGeometry position={[-50, 0, 0]} />
         <MeshConeGeometry position={[0, 0, 0]} />
-        <MeshDodecahedronGeometry position={[10, 0, 0]} />
-        <MeshCylinderGeometry position={[-10,0,0]} />
+        <MeshCylinderGeometry position={[50,0,0]} />
+        <MeshDodecahedronGeometry position={[100, 0, 0]} />
       </Canvas>
     </div>
   )

@@ -30,16 +30,22 @@ function Menu() {
             <Link to="/e_4" onClick={handleClick}>Exp 3 - Geometry</Link>
           </li>
           <li>
-            <Link to="/e_5" onClick={handleClick}>Exp 5 - Materials</Link>
+            <Link to="/e_5" onClick={handleClick}>Exp 5 - SkyBox ( CubeTextureLoader )</Link>
           </li>
           <li>
-            <Link to="/e_6" onClick={handleClick}>Exp 6 - Physics</Link>
+            <Link to="/e_6" onClick={handleClick}>Exp 6 - Basic Materials</Link>
           </li>
           <li>
-            <Link to="/e_7" onClick={handleClick}>Exp 7 - Post processing</Link>
+            <Link to="/e_7" onClick={handleClick}>Exp 7 - Depth Materials</Link>
           </li>
           <li>
-            <Link to="/e_8" onClick={handleClick}>Exp 8 - Animations</Link>
+            <Link to="/e_8" onClick={handleClick}>Exp 8 - Distortions</Link>
+          </li>
+          <li>
+            <Link to="/e_7" onClick={handleClick}>Exp 8 - Post processing</Link>
+          </li>
+          <li>
+            <Link to="/e_8" onClick={handleClick}>Exp 9 - Animations</Link>
           </li>
         </ul> 
       </div>

@@ -11,7 +11,7 @@ export default function MeshCircleGeometry({position}) {
   })
 
   /*
-  args: 
+  circleGeometry args: 
   radius — Radius of the circle, default = 1.
   segments — Number of segments (triangles), minimum = 3, default = 8.
   thetaStart — Start angle for first segment, default = 0 (three o'clock position).
@@ -23,7 +23,7 @@ export default function MeshCircleGeometry({position}) {
       ref={mesh}
       position={position}
       >
-      <circleGeometry attach='geometry' args={[5, 32]} />
+      <circleGeometry attach='geometry' args={[5, 30, 0, 2*Math.PI]} />
       <meshStandardMaterial color={0x00ff00} />
     </mesh>
   )
