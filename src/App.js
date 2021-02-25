@@ -13,6 +13,10 @@ import Experiment5 from './experiments/e_5'
 import Experiment6 from './experiments/e_6'
 import Experiment7 from './experiments/e_7'
 import Experiment8 from './experiments/e_8'
+import Experiment9 from './experiments/e_9'
+import Experiment10 from './experiments/e_10'
+import Experiment11 from './experiments/e_11'
+import Experiment12 from './experiments/e_12'
 
 function App() {
   return (
@@ -44,6 +48,18 @@ function App() {
             </Route>
             <Route path="/e_8">
               <Experiment8 />
+            </Route>
+            <Route path="/e_9">
+              <Experiment9 />
+            </Route>
+            <Route path="/e_10">
+              <Experiment10 />
+            </Route>
+            <Route path="/e_11">
+              <Experiment11 />
+            </Route>
+            <Route path="/e_12">
+              <Experiment12 />
             </Route>
             <Route path="/">
               <Home />

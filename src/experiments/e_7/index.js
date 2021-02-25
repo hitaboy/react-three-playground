@@ -30,7 +30,6 @@ const CameraControls = () => {
 
 // Geometry
 function Sphere() {
-  const { scene, gl } = useThree();
   return (
     <mesh visible position={[0, 0, 0]} rotation={[0, 0, 0]} castShadow>
       <torusKnotGeometry attach="geometry" args={[2, 0.3, 200, 150]} />

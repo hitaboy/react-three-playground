@@ -42,10 +42,16 @@ function Menu() {
             <Link to="/e_8" onClick={handleClick}>Exp 8 - Distortions</Link>
           </li>
           <li>
-            <Link to="/e_7" onClick={handleClick}>Exp 8 - Post processing</Link>
+            <Link to="/e_9" onClick={handleClick}>Exp 9 - Post processing</Link>
           </li>
           <li>
-            <Link to="/e_8" onClick={handleClick}>Exp 9 - Animations</Link>
+            <Link to="/e_10" onClick={handleClick}>Exp 10 - Animations instancedMesh</Link>
+          </li>
+          <li>
+            <Link to="/e_11" onClick={handleClick}>Exp 11 - Animations instancedMesh</Link>
+          </li>
+          <li>
+            <Link to="/e_12" onClick={handleClick}>Exp 12 - Animations instancedMesh</Link>
           </li>
         </ul> 
       </div>

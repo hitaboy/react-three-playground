@@ -8853,6 +8853,11 @@ postcss@^8.1.0:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
+postprocessing@^6.17.1:
+  version "6.20.3"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.20.3.tgz#17cc47bf3a4a4fd0c3e918a2e71292a0958f3349"
+  integrity sha512-Fm68mijfc/DBm0kGiXg3ws8zLgfwdH2XmiS4b/j2JXOsK7Flaq4VylycGgJcf2y6Q/y+zM+ZgtNvJAAcjmgYzA==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -9155,6 +9160,14 @@ react-merge-refs@^1.0.0, react-merge-refs@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
   integrity sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==
+
+react-postprocessing@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-postprocessing/-/react-postprocessing-1.4.0.tgz#caba52f4f6efc839bfbdeed5414f4dd288db0fa4"
+  integrity sha512-IcUfFSGigmZ9E8u07A6WgB9uVYpwiFL8Tvycadcbu0vzI0bbqthikoNKD5zDWv0h5mnUu/y95kIDR5AViup0Fw==
+  dependencies:
+    postprocessing "^6.17.1"
+    react-merge-refs "^1.1.0"
 
 react-property@1.0.1:
   version "1.0.1"
@@ -10693,6 +10706,11 @@ three@^0.125.2:
   version "0.125.2"
   resolved "https://registry.yarnpkg.com/three/-/three-0.125.2.tgz#dcba12749a2eb41522e15212b919cd3fbf729b12"
   integrity sha512-7rIRO23jVKWcAPFdW/HREU2NZMGWPBZ4XwEMt0Ak0jwLUKVJhcKM55eCBWyGZq/KiQbeo1IeuAoo/9l2dzhTXA==
+
+threejs-meshline@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/threejs-meshline/-/threejs-meshline-2.0.12.tgz#503e0cabb4b8572f1f25882997577a072cfa983d"
+  integrity sha512-2U3SyGWAotT/TJCO9NhBDiaAPUq8X+bgh7hK7fDlwoBg9yOPvjaVzIf8b0A60k7poNhEg225qWaX7WeYlUjC7g==
 
 throat@^5.0.0:
   version "5.0.0"
